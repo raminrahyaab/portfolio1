@@ -1,0 +1,109 @@
+@import "tailwindcss";
+
+:root {
+  font-family: "Montserrat", "Poppins", "Segoe UI", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #fff;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-up {
+  animation: fadeUp 0.7s ease-out;
+}
+
+@keyframes riseIn {
+  from {
+    opacity: 0;
+    transform: translateY(22px) scale(0.98);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes zoomInSoft {
+  from {
+    opacity: 0;
+    transform: scale(0.94);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes floatSlow {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes pulseRing {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 80, 142, 0.45);
+  }
+
+  70% {
+    box-shadow: 0 0 0 14px rgba(255, 80, 142, 0);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 80, 142, 0);
+  }
+}
+
+.animate-rise {
+  animation: riseIn 0.7s ease both;
+}
+
+.animate-zoom-soft {
+  animation: zoomInSoft 0.9s ease both;
+}
+
+.float-slow {
+  animation: floatSlow 4.2s ease-in-out infinite;
+}
+
+.pulse-ring {
+  animation: pulseRing 2.2s ease-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
