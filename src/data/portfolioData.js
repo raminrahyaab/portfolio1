@@ -125,7 +125,7 @@ export const pricingPlans = [
   {
     title: 'Enterprise',
     price: '$50',
-    icon: getAssetUrl('assets/images/3.png'),
+    icon: getAssetUrl('assets/images/c2.png'),
     features: ['3 Home HTML', '5 Home Page Design', 'Unlimited Inner Page', '50 Elements', 'Support'],
   },
   {
