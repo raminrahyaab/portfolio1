@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { getAssetUrl } from '../utils/assets.js'
 
 function Header({ navItems, activeId }) {
   const [open, setOpen] = useState(false)
@@ -7,7 +8,7 @@ function Header({ navItems, activeId }) {
     <header className="sticky top-0 z-40 border-b border-zinc-200 bg-white/95 backdrop-blur-xl">
       <nav className="mx-auto flex w-full max-w-6xl items-center justify-between px-5 py-4 sm:px-6">
         <a href="#home" className="inline-flex items-center gap-3">
-          <img src="/assets/images/logo-dark.png" alt="Koyta" className="h-6 w-auto" />
+          <img src={getAssetUrl('assets/images/logo-dark.png')} alt="Koyta" className="h-6 w-auto" />
           <span className="text-xs tracking-[0.3em] text-zinc-500">PORTFOLIO</span>
         </a>
 

@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import useReducedMotion from '../hooks/useReducedMotion.js'
+import { getAssetUrl } from '../utils/assets.js'
 
 function AboutSection({ stats, skills }) {
   const ref = useRef(null)
@@ -65,7 +66,7 @@ function AboutSection({ stats, skills }) {
       }`}
     >
       <div className="relative mx-auto max-w-md">
-        <img src="/assets/images/about-me.png" alt="About" className={`w-full rounded-2xl border border-white/10 bg-white p-3 ${inView ? 'animate-zoom-soft' : ''}`} />
+        <img src={getAssetUrl('assets/images/about-me.png')} alt="About" className={`w-full rounded-2xl border border-white/10 bg-white p-3 ${inView ? 'animate-zoom-soft' : ''}`} />
         <div className={`absolute -bottom-6 -right-6 rounded-2xl border border-zinc-200 bg-white p-4 shadow-lg ${inView ? 'animate-rise float-slow' : ''}`} style={{ animationDelay: '0.25s' }}>
           <p className="text-xs uppercase tracking-[0.25em] text-zinc-500">Based in</p>
           <p className="mt-1 text-lg font-semibold text-[#111135]">New York, USA</p>
