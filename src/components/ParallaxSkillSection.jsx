@@ -1,5 +1,6 @@
 import useReveal from '../hooks/useReveal.js'
 import { useEffect, useState } from 'react'
+import heroBg from '../assets/hero.png'
 
 function ParallaxSkillSection({ skills, highlights }) {
   const { ref, visible } = useReveal(0.15)
@@ -21,8 +22,7 @@ function ParallaxSkillSection({ skills, highlights }) {
         visible ? 'translate-y-0 opacity-100' : 'translate-y-6 opacity-0'
       }`}
       style={{
-        backgroundImage:
-          "url('https://bestwpware.com/html/themetum/koyta/light/koyta-one/assets/img/01_koyta_img/exp-bg.jpg')",
+        backgroundImage: `url('${heroBg}')`,
         backgroundPosition: 'center',
         backgroundSize: 'cover',
         backgroundAttachment: isMobile ? 'scroll' : 'fixed',
