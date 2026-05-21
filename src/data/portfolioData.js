@@ -26,37 +26,37 @@ export const services = [
     id: '01',
     title: 'Graphics Design',
     text: 'I have been providing web design services with great success for years.',
-    icon: getAssetUrl('assets/images/1.png'),
+    icon: getAssetUrl('assets/images/c1.png'),
   },
   {
     id: '02',
     title: 'Web Design',
     text: 'Sapiente corrupti duis ipsum a faucibus vero varius nulla for modern launches.',
-    icon: getAssetUrl('assets/images/2.png'),
+    icon: getAssetUrl('assets/images/c2.png'),
   },
   {
     id: '03',
     title: 'Trendy Work',
     text: 'Eligendi vivamus sagittis alias magna reiciendis nunc with strong art direction.',
-    icon: getAssetUrl('assets/images/3.png'),
+    icon: getAssetUrl('assets/images/c3.png'),
   },
   {
     id: '04',
     title: 'Easy To Customize',
     text: 'Dignissimos nobis dignissim tristique sequi occaecat cum auctor facilis interdum.',
-    icon: getAssetUrl('assets/images/4.png'),
+    icon: getAssetUrl('assets/images/c1.png'),
   },
   {
     id: '05',
     title: 'Adobe Photoshop',
     text: 'Nascetur luctus vitae quam with fast-turn social cuts and gallery delivery.',
-    icon: getAssetUrl('assets/images/5.png'),
+    icon: getAssetUrl('assets/images/c2.png'),
   },
   {
     id: '06',
     title: 'Web Development',
     text: 'Pulvinar tenetur tempor ibendum quod and campaign-ready image systems.',
-    icon: getAssetUrl('assets/images/6.png'),
+    icon: getAssetUrl('assets/images/c3.png'),
   },
 ]
 
